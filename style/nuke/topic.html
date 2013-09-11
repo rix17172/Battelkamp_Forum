@@ -1,0 +1,108 @@
+<!--Use(Defult)-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/topic.css">
+<title>
+	<!--Lang(047)-->
+</title>
+</head>
+<body>
+	<!--Include(TopMenu,html)-->
+
+	<div id="Main">
+	
+	<!-- Include(menu,html) -->
+	
+		<div class="Boks">
+			<!--If(may_answer)-->
+			<div style="border-bottom: 1px solid black">
+				<a href="post.php?post=answer_topic&amp;topic_title=<!--Get(t)-->">
+					<!--Lang(058)-->
+				</a>
+			</div>
+			<!--End_if-->
+			<!--For(bred)-->
+			<!--If(bred.bred_num != 0)-->
+			/
+			<!--End_if-->
+			<!--If(bred.url)-->
+			<a href="<!--bred.url-->"> <!--bred.name-->
+			</a>
+			<!--Else-->
+			<!--bred.name-->
+			<!--End_if-->
+			<!--End_for.bred-->
+			<!-- If(pdf == 1) -->
+			<div style="float: right; margin-right: 10px;">
+				<a href="pdf.php?page=topic&amp;topic_id=<!-- Get(t) -->"><img
+					src="img/pdf.png" style="width: 15px;"
+					title="<!-- Lang(ShowInPDF) -->"></a>
+			</div>
+			<!--end-->
+		</div>
+
+		<!--For(topic)-->
+		<a id="topic_<!--topic.count-->"></a>
+		<fieldset class="Boks">
+			<!--If(topic.title)-->
+			<legend>
+				<!--topic.title-->
+			</legend>
+			<!--End_if-->
+			<div class="MainTopic">
+				<div class="TopicLeft">
+					<div class="TopicFrom">
+						<!--topic.from-->
+					</div>
+					<div class="TopicGrup">
+						<!--If(topic.is_user)-->
+						<!--topic.grup-->
+						<!--Else-->
+						<!--Lang(Geaust)-->
+						<!--End_if-->
+					</div>
+					<div class="TopicPost">
+						<!--Lang(048)-->
+						<!--topic.post-->
+					</div>
+					<div class="LinkPost">
+						<a
+							href="?title=<!--Get(title,urlencode)-->&amp;t=<!--Get(t)-->#topic_<!--topic.count-->">[<!--topic.count-->]
+						</a>
+					</div>
+				</div>
+				<div class="Message">
+					<!--topic.mess-->
+				</div>
+			</div>
+			<div class="TopicBottom">
+				<!--If(is_user)-->
+				<!--If(topic.is_user && topic.user_id == my_id)-->
+				<a
+					href="post.php?post=change_post&amp;p=<!--topic.id-->&amp;is_title=<!--topic.is_title-->&amp;pp=<!--topic.count-->">
+					<!--Lang(062)-->
+				</a>
+				<!--Elseif(!is_geaust)-->
+				<a
+					href="report.php?t=<!--topic.id-->&amp;is_title=<!--topic.is_title-->">
+					<!--Lang(069)-->
+				</a>
+				<!--If(may_warn)-->
+				<a
+					href="report.php?mode=warn&amp;user=<!--topic.user_id-->&amp;t_id=<!--Get(t)-->">
+					<!--Lang(086)-->
+				</a>
+				<!--End_if-->
+				<!--End_if-->
+				<!--Else-->
+
+				<!--End_if-->
+			</div>
+		</fieldset>
+		<!--End_for.topic-->
+	</div>
+</body>
+</html>

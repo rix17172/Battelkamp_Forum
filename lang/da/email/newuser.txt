@@ -1,0 +1,9 @@
+<!--SetSender(Forum bruger aktivering)--><!--SetTitle(Aktiver din bruger)-->
+Hej <!--Username()--><br>
+<br>
+for at du kan logge ind på vores forum bliver du nødt til at aktivere din konto.<br>
+ Dette kan du gøre ved at trykke på dette <a href="<!--AktivLink()-->">Link</a><br>
+<br>
+Har du spøgsmål kan du altid skrive til os.<br>
+Med venlig hilsen<br>
+Forum ejeren

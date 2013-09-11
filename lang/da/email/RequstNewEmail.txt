@@ -1,0 +1,12 @@
+<!--SetTitle(Anmodning af ny email)-->
+
+Hej <!--Username()-->.
+
+Der er blevet anmodet ny password til denne email. 
+Din konto er sat i bero imens. 
+
+Hvis du har bedt om nyt password skal du bare gå ind i føglende link:
+
+ellers for at for at fjerne blokeringen:
+
+Hilsen <!--SiteName()-->

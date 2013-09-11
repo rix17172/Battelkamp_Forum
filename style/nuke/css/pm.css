@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F6ECD1;
+}
+
+#top {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+#Main {
+	position: absolute;
+	top: 30px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+}
+
+#top,#Main {
+	background-color: #99FF33;
+}
+
+a {
+	color: black;
+}
+
+#MainTitle,.PmTitle {
+	border-bottom: 1px solid black;
+}
+
+.Boks {
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #F6ECD1;
+	padding: 10px;
+}
+
+.Error {
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #FF0000;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+}

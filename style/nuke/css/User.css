@@ -1,0 +1,63 @@
+body {
+	background-color: #F6ECD1;
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	background-color: #99FF33;
+	font-size: 12px;
+	border: 1px solid black;
+}
+
+#Main {
+	background-color: #99FF33;
+	position: absolute;
+	border: 1px solid black;
+	top: 25px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	overflow: auto;
+}
+
+a {
+	color: black;
+}
+
+.Boks,#Error,#Okay {
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #F6ECD1;
+}
+
+#Error,#Okay {
+	background-color: red;
+	text-align: center;
+	font-size: 20px;
+}
+
+#Okay {
+	background-color: #99FF33;
+}
+
+.UserTable {
+	width: 100%;
+}
+
+.UserTable th {
+	width: 50%;
+}
+
+.input {
+	width: 100%;
+	border-radius: 10px;
+	background-color: #99FF33;
+	border: none;
+}

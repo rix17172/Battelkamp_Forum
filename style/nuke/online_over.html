@@ -1,0 +1,61 @@
+<!-- Use(Defult) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/User.css">
+<title>
+	<!--Lang(045)-->
+</title>
+</head>
+<body>
+	<!-- Include(TopMenu,html) -->
+
+	<div id="Main">
+	
+	<!-- Include(menu,html) -->
+	
+		<!-- If(count_user != 0) -->
+		<fieldset class="Boks">
+			<legend>
+				<!-- Lang(046) -->
+			</legend>
+			<table style="width: 100%;">
+				<!-- For(bruger) -->
+				<tr>
+					<th>
+						<!--bruger.name-->
+					</th>
+					<td style="border-left: 1px solid black; width: 50%"><a
+						href="<!--bruger.url-->">
+							<!--bruger.where-->
+					</a></td>
+				</tr>
+				<!--end-->
+			</table>
+		</fieldset>
+		<!--end-->
+		<!-- If(count_geaust != 0) -->
+		<fieldset class="Boks">
+			<legend>
+				<!-- Lang(047) -->
+			</legend>
+			<table style="width: 100%">
+				<!-- For(geust) -->
+				<tr>
+					<th>
+						<!--geust.num-->
+					</th>
+					<td style="border-left: 1px solid black; width: 50%"><a
+						href="<!--geust.url-->">
+							<!--geust.where-->
+					</a></td>
+				</tr>
+				<!--end-->
+			</table>
+		</fieldset>
+		<!--end-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- Use(Defult) -->
+<!-- Include(head,html) -->
+
+<fieldset class="Boks">
+<legend><!-- Lang(userData) --></legend>
+<form action="#" method="post">
+<table style="width:100%">
+<tr>
+<th style="width:50%"><!-- Lang(userName) --></th>
+<td style="width:50%"><input type="text" name="username" value="<!-- Set(username) -->" class="Input"></td>
+</tr>
+<tr>
+<th style="width:50%"><!-- Lang(email) --></th>
+<td style="width:50%"><input type="text" name="email" value="<!-- Set(email) -->" class="Input"></td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="<!-- Lang(changeData) -->" class="Input">
+<input type="hidden" name="code" value="1">
+</td>
+</tr>
+</table>
+</form>
+</fieldset>
+
+<fieldset class="Boks">
+<legend><!-- Lang(changePass) --></legend>
+<form action="#" method="post">
+<table style="width:100%">
+<tr>
+<th style="width:50%"><!-- Lang(password) --></th>
+<td style="width:50%"><input type="password" name="password" class="Input"></td>
+</tr>
+<tr>
+<th style="width:50%"><!-- Lang(passwordAgian) --></th>
+<td style="width:50%"><input type="password" name="passwordA" class="Input"></td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="<!-- Lang(passChange) -->" class="Input">
+<input type="hidden" name="code" value="2">
+</td>
+</tr>
+</table>
+</form>
+</fieldset>
+
+<fieldset class="Boks">
+<legend><!-- Lang(changeGrup) --></legend>
+<form action="#" method="post">
+<table style="width:100%">
+<tr>
+<th style="width:50%"><!-- Lang(grupName) --></th>
+<td style="width:50%">
+<select class="Input" name="newGrup">
+<!-- For(grup) -->
+<option  value="<!--grup.id-->"
+ <!-- If(grup.isMember) --> selected<!--end-->><!--grup.name--></option>
+<!--end-->
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="<!-- Lang(grupChange) -->" class="Input">
+<input type="hidden" name="code" value="3">
+</td>
+</tr>
+</table>
+</form>
+</fieldset>
+
+<fieldset class="Boks">
+<legend><!-- Lang(deleteUser) --></legend>
+<form action="#" method="post">
+<table style="width:100%">
+<tr>
+<th style="width:50%"><!-- Lang(deleteDo) --></th>
+<td style="width:50%">
+<select name="chose" class="Input">
+<option value="all"><!-- Lang(deleteAll) --></option>
+<option value="noneAll"><!-- Lang(deleteNonAll) --></option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="hidden" name="code" value="4">
+<input type="submit" value="<!-- Lang(deleteNow) -->" class="Input">
+</td>
+</tr>
+</table>
+</form>
+</fieldset>
+
+</div>
+</body>
+</html>

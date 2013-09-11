@@ -1,0 +1,139 @@
+<!--Use(Defult)-->
+<!--IncludeLang(ucp_rig.php)-->
+<!--IncludeLang(ucp_login.php)-->
+<!DOCTYPE html>
+<!--
+ ___    _  __    _   _    _  ______
+|xxx\  |x| |x|  |x| |x|  /x/ |xxxxx|
+|x|\x\ |x| |x|  |x| |x| /x/  |x|__
+|x| \x\|x| |x|  |x| |x|/x/   |xxxx|
+|x|  \xxx| |x|__|x| |x|\x\   |x|____
+|x|   \xx| |xxxxxx| |x| \x\  |xxxxxx|
+ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/input.css">
+<!--If(is_user)-->
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/UserMain.css">
+<!--Else-->
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/NoneUser.css">
+<!--End_if-->
+<title>
+	<!--Lang(001)-->
+</title>
+</head>
+<body>
+
+	<!--Include(TopMenu,html)-->
+
+	<div id="Main">
+
+        <!-- Include(menu,html) -->
+
+		<!--If(may_see_report && count_report != 0)-->
+		<div class="Boks" style="text-align: center; font-size: 25px;">
+			<a href="report.php?mode=see_report"
+				style="color: red; text-decoration: blink">
+				<!--Lang(075)-->
+			</a>
+		</div>
+		<!--end-->
+
+		<!--Include(ForumAndKat,html)-->
+
+		<fieldset class="Boks">
+		
+			<legend>
+				<a href="user.php?mode=online">
+					<!--Lang(005)-->
+				</a>
+			</legend>
+			<!--Lang(006)-->
+			<!--Set(user_online)-->
+			<!--Lang(007)-->
+			<!--Set(geaust_online)-->
+			<!--Lang(008)-->
+			<!--Set(recod_user)-->
+		</fieldset>
+
+		<!--If(admin_tool)-->
+		<div class="Boks" style="text-align: center">
+			<a href="admin/login.php"> <!--Lang(admin_tool)-->
+			</a>
+		</div>
+		<!--End_if-->
+	</div>
+
+	<!--If(is_geaust)-->
+	<div id="Right">
+		<div class="MiniBoks">
+			<form action="ucp.php?mode=login" method="post">
+				<div class="MiniTitle">
+					<!--Lang(029)-->
+				</div>
+				<div class="MiniNewLine">
+					<!--Lang(030)-->
+					:
+					<div class="MiniRight">
+						<input type="text" name="username" class="input">
+					</div>
+				</div>
+				<div class="MiniNewLine">
+					<!--Lang(031)-->
+					:
+					<div class="MiniRight">
+						<input type="password" name="password" class="input">
+					</div>
+				</div>
+				<div class="MiniNewLine">
+					<input type="submit" value="<!--Lang(033)-->" class="MiniSubmit">
+				</div>
+			</form>
+		</div>
+
+		<div class="MiniBoks">
+			<div class="MiniTitle">
+				<!--Lang(010)-->
+			</div>
+			<div class="MiniNewLine">
+				<!--Lang(011)-->
+				:
+				<div class="MiniRight">
+					<input type="text" name="username" class="input">
+				</div>
+			</div>
+			<div class="MiniNewLine">
+				<!--Lang(013)-->
+				:
+				<div class="MiniRight">
+					<input type="password" name="password" class="input">
+				</div>
+			</div>
+			<div class="MiniNewLine">
+				<!--Lang(014)-->
+				:
+				<div class="MiniRight">
+					<input type="password" name="repassword" class="input">
+				</div>
+			</div>
+			<div class="MiniNewLine">
+				<!--Lang(012)-->
+				:
+				<div class="MiniRight">
+					<input type="text" name="email" class="input">
+				</div>
+			</div>
+			<div class="MiniNewLine">
+				<input type="submit" value="<!--Lang(015)-->" class="MiniSubmit">
+			</div>
+		</div>
+
+	</div>
+	<!--End_if-->
+
+</body>
+</html>

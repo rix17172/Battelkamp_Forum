@@ -1,0 +1,86 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#F6ECD1;
+}
+
+#Top{
+	position:absolute;
+	top:5px;
+	left:5px;
+	right:5px;
+	height:25px;
+	background-color:#99FF33;
+	border-radius: 10px;
+	padding:5px;
+}
+
+#Left{
+	position:absolute;
+	top:45px;
+	left:5px;
+	bottom:5px;
+	width:170px;
+	background-color:#99FF33;
+	border-radius: 10px;
+	padding:5px;
+}
+
+.LeftBoks{
+	border:1px solid black;
+	margin:5px;
+	background-color:#F6ECD1;
+	border-radius: 10px;
+}
+
+.MenuBotton{
+		background-color:#F6ECD1;
+		border-radius: 10px;
+}
+
+a{
+	color:black;
+}
+
+#Main{
+	position:absolute;
+	top:45px;
+	left:190px;
+	right:5px;
+	bottom:5px;
+	background-color:#99FF33;
+	border-radius: 10px;
+	padding:5px;
+}
+
+.Boks, .Error, .Warning{
+	margin:5px;
+	border:1px solid black;
+	background-color:#F6ECD1;
+	border-radius: 10px;
+}
+
+.Error,.Warning,#Okay{
+	text-align:center;
+	background-color:#FF0000;
+	font-size:25px;
+}
+
+.Warning{
+	background-color:#FFFF00;
+}
+
+#Okay{
+	background-color:#66FF33;
+}
+
+.Title{
+	text-align:center;
+	font-size:25px;
+}
+
+.Input{
+	width:100%;
+	background-color:#66FF33;
+	border-radius: 10px;
+}

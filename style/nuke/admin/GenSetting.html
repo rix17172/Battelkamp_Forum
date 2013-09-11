@@ -1,0 +1,55 @@
+<!-- Use(Defult) -->
+<!-- Include(head,html) -->
+<div class="Boks">
+<form action="#" method="post">
+<table id="GenTable">
+<tr>
+<th style="width:50%"><!-- Lang(Style) --></th>
+<td style="width:50%">
+<select name="Style" class="Input">
+<!-- For(styleChose) -->
+<option value="<!--styleChose.name-->" 
+<!-- If(styleChose.IsStand) -->selected<!--end-->><!--styleChose.name--></option>
+<!--end-->
+</select>
+</td>
+</tr>
+<tr>
+<th><!-- Lang(StyleType) --></th>
+<td><input type="text" name="styleType" class="Input" value="<!-- Set(styleType) -->">
+</tr>
+<tr>
+<th><!-- Lang(StandLang) --></th>
+<td>
+<select name="standLang" class="Input">
+<!-- For(StandLang) -->
+<option value="<!--StandLang.Map-->" 
+<!-- If(StandLang.IsStand) -->selected <!--end-->
+style="background: url(<!--StandLang.Flag-->) right no-repeat; width: 100px"><!--StandLang.Name--></option>
+<!--end-->
+</select>
+</td>
+</tr>
+<tr>
+<th><!-- Lang(ipControl) --></th>
+<td>
+<select name="controlIp" class="Input">
+<option value="true"<!-- If(ipControl) --> selected<!--end-->
+><!-- Lang(ipTrue) --></option>
+<option value="false"<!-- If(!ipControl) --> selected<!--end-->
+><!-- Lang(ipFalse) --></option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="<!-- Lang(Change) -->" class="Input">
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+</div>
+</body>
+</html>

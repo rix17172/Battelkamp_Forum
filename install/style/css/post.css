@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+
+.input{
+	background-color:#E4E4DF;
+	width:100%;
+	border-radius:10px;
+}
+
+#error{
+	margin:25px 100px 25px 100px; 
+    border-radius:10px;
+    border: 1px solid black;
+    background-color:red;
+    text-align:center;
+}
+
+#ok{
+	margin:25px 100px 25px 100px; 
+    border-radius:10px;
+    border: 1px solid black;
+    background-color:#91FF6C;
+}
+
+#warning{
+	margin:25px 100px 25px 100px; 
+    border-radius:10px;
+    border: 1px solid black;
+    background-color:#FFFF66;	
+}
+
+#menu{
+	width:100%;
+	background-color:#E4E4DF;
+}
+
+.bb{
+	background-color:#DBDBC9;
+}

@@ -1,0 +1,74 @@
+<!-- Use(Defult) -->
+<!-- Include(ucp_head,html) -->
+<style>
+<!--
+.Boks {
+	margin: 15px;
+}
+
+.input {
+	background-color: #99FF33;
+}
+-->
+</style>
+<div id="Main">
+
+<!-- Include(menu,html) -->
+
+	<!-- If(is_error) -->
+	<div id="error">
+		<!-- For(error) -->
+		<!--error.error-->
+		<br>
+		<!--end-->
+	</div>
+	<!--end-->
+
+	<!-- If(is_okay) -->
+	<div id="Okay">
+		<!-- Lang(024) -->
+	</div>
+	<!-- Elseif(is_warning) -->
+	<div id="warning">
+		<!-- Set(warning) -->
+	</div>
+	<!--end-->
+
+	<fieldset class="Boks">
+		<legend>
+			<!-- Lang(010) -->
+		</legend>
+		<form action="#" method="post">
+			<table style="width: 100%">
+				<tr>
+					<th style="width: 25%;">
+						<!-- Lang(011) -->
+					</th>
+					<td style="width: 25%;"><input type="text" name="username"
+						class="input"></td>
+					<th style="width: 25%;">
+						<!-- Lang(012) -->
+					</th>
+					<td style="width: 25%"><input type="email" name="email"
+						class="input"></td>
+				</tr>
+				<tr>
+					<th>
+						<!-- Lang(013) -->
+					</th>
+					<td><input type="password" name="password" class="input"></td>
+					<th>
+						<!-- Lang(014) -->
+					</th>
+					<td><input type="password" name="repassword" class="input"></td>
+				</tr>
+				<tr>
+					<td colspan="4"><input type="submit" class="input"
+						value="<!-- Lang(015) -->"></td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+</div>
+</body>
+</html>

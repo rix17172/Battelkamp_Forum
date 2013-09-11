@@ -1,0 +1,82 @@
+<!--Use(Defult)-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<!--Set(charset)-->">
+<link rel="stylesheet" type="text/css" href="<!--Set(css)-->">
+<link rel="stylesheet" type="text/css" href="<!--Set(Post)-->">
+<title><!--Lang(title)--></title>
+</head>
+<body>
+<div id="main">
+
+<!--If(error)-->
+<div id="error">
+<!--For(error)-->
+ <h3><!--error.error--></h3>
+<!--End_for.error-->
+</div>
+<!--End_if-->
+
+<!--If(!IsInsert)-->
+
+<div class="boks">
+<form action="#" method="post">
+<table style="width:100%">
+<tr>
+<th colspan="2"><!--Lang(UserData)--></th>
+</tr>
+<tr>
+<th><!--Lang(UserName)--></th>
+<td><input type="text" name="username" class="input">
+</tr>
+<tr>
+<th><!--Lang(Email)--></th>
+<td><input type="text" name="email" class="input"></td>
+</tr>
+<tr>
+<th><!--Lang(Password)--></th>
+<td><input type="password" name="password" class="input"></td>
+</tr>
+<tr>
+<th><!--Lang(PasswordAgin)--></th>
+<td><input type="password" name="passwordagin" class="input"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value="<!--Lang(OpretTable)-->" class="input"></td>
+</tr>
+</table>
+<input type="hidden" name="host" value="<!--Post(host)-->">
+<input type="hidden" name="user" value="<!--Post(user)-->">
+<input type="hidden" name="pass" value="<!--Post(pass)-->">
+<input type="hidden" name="data" value="<!--Post(data)-->">
+<input type="hidden" name="prefix" value="<!--Post(prefix)-->">
+<input type="hidden" name="post" value="true">
+</form>
+</div>
+<!--Else-->
+<div class="boks">
+<table style="width:100%">
+<tr>
+<th><!--Lang(TableName)--></th>
+<th><!--Lang(IsOkay)--></th>
+</tr>
+<!--For(sql)-->
+<tr>
+<th><!--sql.tablename--></th>
+<!--If(sql.IsOkay)-->
+<th style="background-color:green"><!--Lang(Yes)--></th>
+<!--Else-->
+<th style="background-color:red"><!--Lang(No)--> <!--sql.error--></th>
+<!--End_if-->
+</tr>
+<!--End_for.sql-->
+</table>
+</div>
+<div class="boks" style="text-align:center">
+<a href="?page=6"><!--Lang(nextstep)--></a>
+</div>
+<!--End_if-->
+</div>
+</body>
+</html>

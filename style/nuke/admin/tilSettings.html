@@ -1,0 +1,53 @@
+<!-- Use(Defult) -->
+<!-- Include(head,html) -->
+<fieldset class="Boks">
+<legend><!-- Lang(opretSetting) --></legend>
+<form action="#" method="post">
+<table style="width:100%">
+<tr>
+<th style="width:50%"><!-- Lang(startGrup) --></th>
+<td style="width:50%">
+<select name="startGrup" class="Input">
+<!-- For(standGrup) -->
+<option value="<!--standGrup.id-->"
+<!-- If(standGrup.isStand) --> selected<!--end-->><!--standGrup.name--></option>
+<!--end-->
+</select>
+</td>
+</tr>
+<tr>
+<th style="width:50%"><!-- Lang(hashName) --></th>
+<td style="width:50%">
+<select name="hashName" class="Input">
+<!-- For(hash) -->
+<option value="<!--hash.hash-->"
+<!-- If(hash.isUse) --> selected<!--end-->><!--hash.hash--></option>
+<!--end-->
+</select>
+</td>
+</tr>
+<tr>
+<th style="width:50%"><!-- Lang(opretKontrol) --></th>
+<td style="width:50%">
+<select name="opretKontrol" class="Input">
+<option value="1" <!-- If(kontrolId == 1) --> selected<!--end-->>
+<!-- Lang(noKontrol) --></option>
+<option value="2" <!-- If(kontrolId == 2) --> selected<!--end-->>
+<!-- Lang(emailKontrol) --></option>
+<option value="3" <!-- If(kontrolId == 3) --> selected<!--end-->>
+<!-- Lang(adminKontrol) --></option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="<!-- Lang(change) -->" class="Input">
+<input type="hidden" name="post" value="true">
+</td>
+</tr>
+</table>
+</form>
+</fieldset>
+</div>
+</body>
+</html>

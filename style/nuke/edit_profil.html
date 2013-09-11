@@ -1,0 +1,116 @@
+<!-- Use(Defult) -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/User.css">
+<title>
+	<!--Lang(edit_p_title)-->
+</title>
+</head>
+<body>
+	<!-- Include(TopMenu,html) -->
+	<div id="Main">
+	
+	<!-- Include(menu,html) -->
+	
+		<!-- If(is_error) -->
+		<div id="Error">
+			<!-- For(error) -->
+			<!--error.error-->
+			<br>
+			<!--end-->
+		</div>
+		<!-- Elseif(is_okay) -->
+		<div id="Okay">
+			<!-- Lang(okay) -->
+		</div>
+		<!--end-->
+
+		<fieldset class="Boks">
+			<legend>
+				<!-- Lang(l_title) -->
+			</legend>
+			<form action="#" method="post">
+				<table class="UserTable">
+					<tr>
+						<th>
+							<!-- Lang(username) -->
+						</th>
+						<td><input type="text" name="username" class="input"
+							value="<!-- Set(username) -->"></td>
+					</tr>
+					<tr>
+						<th>
+							<!-- Lang(email) -->
+						</th>
+						<td><input type="email" name="email" class="input"
+							value="<!--Set(email)-->"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit"
+							value="<!--Lang(change_username)-->" class="input"></td>
+					</tr>
+				</table>
+				<input type="hidden" name="what" value="1">
+			</form>
+		</fieldset>
+		
+		<fieldset class="Boks">
+		   <legend>
+		        <!-- Lang(changeTime) -->
+		   </legend>
+		   <form action="#" method="post">
+		   <table class="UserTable">
+		    <tr>
+		    <th><!-- Lang(timeFormat) --> (<a href="http://www.php.net/manual/en/function.date.php" target="_blank"><!-- Lang(phpTime) --></a>)</th>
+		    <td><input type="text" name="timeFormat" class="input" value="<!-- Set(timeFormat) -->"></td>
+		    </tr>
+		    <tr>
+		    <td colspan="2">
+		    <input type="hidden" name="what" value="3">
+		    <input type="submit" value="<!-- Lang(submitTime) -->" class="input">
+		    </td>
+		    </tr>
+		   </table>
+		   </form>
+		</fieldset>
+
+		<fieldset class="Boks">
+			<legend>
+				<!-- Lang(change_pass) -->
+			</legend>
+			<form action="#" method="post">
+				<table class="UserTable">
+					<tr>
+						<th>
+							<!-- Lang(old_password) -->
+						</th>
+						<td><input name="old_password" type="password" class="input"></td>
+					</tr>
+					<tr>
+						<th>
+							<!-- Lang(new_password) -->
+						</th>
+						<td><input name="new_password" type="password" class="input"></td>
+					</tr>
+					<tr>
+						<th>
+							<!-- Lang(again_password) -->
+						</th>
+						<td><input name="again_password" type="password"
+							class="input"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="hidden" name="what" value="2">
+							<input type="submit" class="input"
+							value="<!-- Lang(change_pass) -->"></td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+
+	</div>
+</body>
+</html>

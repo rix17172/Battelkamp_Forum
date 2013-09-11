@@ -1,0 +1,89 @@
+<!--Use(Defult)-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/input.css">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/post.css">
+<title>
+	<!--Set(title)-->
+</title>
+<script type="text/javascript" src="style/<!--style_map-->/js/text.js"></script>
+</head>
+<body onload="start()">
+	<!--Include(TopMenu,html)-->
+
+	<div id="Main">
+
+    <!-- Include(menu,html) -->
+
+		<!--If(error)-->
+		<div id="error">
+			<!--For(error)-->
+			<!--error.message-->
+			<br>
+			<!--End_for.error-->
+		</div>
+		<!--End_if-->
+
+		<fieldset class="Boks">
+			<legend>
+				<!--Set(boks_title)-->
+			</legend>
+			<form action="#" method="post">
+				<!--If(title)-->
+				<div id="TopicTitle">
+					<!--Lang(051)-->
+					: <input type="text" name="title" class="input"
+						value="<!--If(title_value)--><!--Set(title_value)--><!--Else-->
+<!--Post(title)--><!--End_if-->">
+				</div>
+				<!--End_if-->
+				<!--If(to)-->
+				<div id="To">
+					<!-- Lang(PmTo) -->
+					<input list="ToList" name="To" class="input">
+					<datalist id="ToList">
+						<!-- For(UserList) -->
+						<option value="<!--UserList.username-->">
+							<!--end-->
+					</datalist>
+				</div>
+				<!--End_if-->
+				<!--If(is_geaust || edit_g_name)-->
+                 <div class="name">
+                   <!-- Lang(052) -->
+                   <input type="text" name="g_name" class="input">
+                 </div>
+				<!--End_if-->
+				<div class="bb">
+					<input type="button" value="([B]*[/B])" onclick="AddSmylie(0)"
+						class="bbBotton"><input type="button" value="([U]*[/U])"
+						onclick="AddSmylie(1)" class="bbBotton"><input
+						type="button" value="([I]*[/I])" onclick="AddSmylie(2)"
+						class="bbBotton"><input type="button" value="URL"
+						onclick="AddSmylie(3)" class="bbBotton">
+				</div>
+				<!--If(message_value)-->
+				<textarea id='mess' class="TextAreaInput" name="message"><!--Set(message_value)--></textarea>
+				<!--Else-->
+				<textarea id='mess' class="TextAreaInput" name="message"><!--Post(message)--></textarea>
+				<!--End_if-->
+				<!--If(is_smylie)-->
+				<div id="SmylieBB">
+					<!--For(smylie)-->
+					<a href="javascript:InsertText(GetId('mess'),'<!--smylie.bb-->#')"><img
+						src="img/img.php?image_name=<!--smylie.url-->&amp;w=<!--smylie.width-->&amp;h=<!--smylie.heigh-->&amp;sort=1"
+						alt="<!--smylie.bb-->" title="<!--smylie.name-->"></a>
+					<!--End_for.smylie-->
+				</div>
+				<!--End_if-->
+				<input type="submit" value="<!--Lang(054)-->" id="inputSubmit">
+			</form>
+		</fieldset>
+
+	</div>
+</body>
+</html>

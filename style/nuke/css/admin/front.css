@@ -1,0 +1,11 @@
+@import url('main.css');
+
+#StatOverviwe{
+	margin:5px;
+	border:1px solid black;
+	clear:auto;
+}
+
+#StatTable{
+	width:100%;
+}

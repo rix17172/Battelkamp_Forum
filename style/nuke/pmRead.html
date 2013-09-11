@@ -1,0 +1,59 @@
+<!--Use(Defult)-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="style/<!--style_map-->/css/pm.css">
+<title>
+	<!--Lang(Title)-->
+</title>
+</head>
+<body>
+	<!--Include(TopMenu,html)-->
+	<div id="Main">
+	
+	<!-- Include(menu,html) -->
+	
+		<div class="Boks">
+			<a href="post.php?post=answer_pm&PmId=<!-- Set(id) -->">
+				<!-- Lang(AnswerBack) -->
+			</a>
+		</div>
+		<!-- If(MessageCount != 0) -->
+		<!-- For(pm)-->
+		<div class="Boks">
+			<table style="width: 100%;">
+				<!--If(pm.sort == 'title')-->
+				<tr>
+					<th style="border-bottom: 1px solid black;" colspan='2'>
+						<!--pm.title-->
+					</th>
+				</tr>
+				<!--end-->
+				<tr>
+					<td style="border-right: 1px solid black; width: 15%;">
+						<!-- Lang(PMFrom) -->: <!--pm.username-->
+					</td>
+					<td>
+						<!--pm.message-->
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="border-top: 1px solid black"><a
+						href="?page=Read&amp;id=<!-- Get(id) -->&amp;Delete=<!--pm.id-->&amp;is_title=
+<!-- If(pm.sort == 'title')-->true<!--Else-->false<!--end-->">
+							<!-- Lang(DeletePM) -->
+					</a></td>
+				</tr>
+			</table>
+		</div>
+		<!--end-->
+		<!--Else-->
+		<div class="Error">
+			<!-- Lang(NoPmTopic) -->
+		</div>
+		<!--end-->
+	</div>
+</body>
+</html>
