@@ -1,8 +1,0 @@
-<!--SetSender(Forum user activation)--><!--SetTitle(Activate your user)-->
-Hey <!--Username()--><br>
-<br>In order to use your user please activate your account<br>
- You can do this by pressing this <a href="<!--AktivLink()-->">Link</a><br>
-<br>
-If you have questions, you can always write to us.<br>
-Sincerely,<br>
-Forum owner
